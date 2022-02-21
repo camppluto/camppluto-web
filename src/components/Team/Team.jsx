@@ -51,26 +51,33 @@ const Team = forwardRef(({ onScreen }, ref) => {
     <TeamStyle ref={ref}>
       <div className="container">
         <div className="content">
-          <Title className="title" as='h2' startAnim={onScreen}>
+          <Title className="title" as="h2" startAnim={onScreen}>
             <span>Team</span>
           </Title>
-          <Fade triggerOnce cascade direction={"down"} fraction={0} duration={700} delay={100}>
-          <ul className="team-list">
-            {teamList.map(({ name, position, img }) => {
-              return (
-                <li className="team-card" key={name}>
-                  <div className="img-wrapper">
-                    <picture>
-                      <source srcSet={img.webp} type="image/webp" />
-                      <img src={img.png} alt="camp-pluto" />
-                    </picture>
-                  </div>
-                  <p className="name">{name}</p>
-                  <p className="position">{position}</p>
-                </li>
-              )
-            })}
-          </ul>
+          <Fade
+            triggerOnce
+            cascade
+            direction={"down"}
+            fraction={0}
+            duration={700}
+            delay={100}
+          >
+            <ul className="team-list">
+              {teamList.map(({ name, position, img }) => {
+                return (
+                  <li className="team-card" key={name}>
+                    <div className="img-wrapper">
+                      <picture>
+                        <source srcSet={img.webp} type="image/webp" />
+                        <img src={img.png} alt="camp-pluto" />
+                      </picture>
+                    </div>
+                    <p className="name">{name}</p>
+                    <p className="position">{position}</p>
+                  </li>
+                )
+              })}
+            </ul>
           </Fade>
         </div>
       </div>

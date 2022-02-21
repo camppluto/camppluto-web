@@ -2,7 +2,7 @@ import { HeroStyle } from "./Hero.style"
 import { Button } from "../UIKit"
 import { forwardRef, useEffect, useState } from "react"
 import { Title } from "../Animations"
-import { Fade, Rotate } from "react-awesome-reveal";
+import { Fade, Rotate } from "react-awesome-reveal"
 
 const Hero = forwardRef(({ onScreen }, ref) => {
   const [animationClass, setAnimationClass] = useState("")
@@ -24,10 +24,10 @@ const Hero = forwardRef(({ onScreen }, ref) => {
             <div className="title" onAnimationEnd={showNextAnimation}>
               <Title startAnim={onScreen}>
                 <span>Welcome to </span>
-                <span className='color-primary'> Camp Pluto</span>
+                <span className="color-primary"> Camp Pluto</span>
               </Title>
             </div>
-            <Fade triggerOnce direction={'down'} delay={3600} duration={800}>
+            <Fade triggerOnce direction={"down"} delay={3600} duration={800}>
               <p className="text">
                 Camp Pluto is the first ever members-only campground where
                 memberships are bought on the Ethereum blockchain as NFTs

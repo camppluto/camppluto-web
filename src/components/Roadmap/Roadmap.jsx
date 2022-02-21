@@ -13,7 +13,7 @@ const Roadmap = forwardRef(({ onScreen }, ref) => {
     <RoadmapStyle ref={ref}>
       <div className="container">
         <div className="content">
-          <Title className="title" as='h2' startAnim={onScreen}>
+          <Title className="title" as="h2" startAnim={onScreen}>
             <span>Roadmap</span>
           </Title>
           <TimelineObserver

@@ -54,7 +54,12 @@ const Header = ({ onLinkClick }) => {
               <div className="social-mobile">
                 <ul className="social">
                   <li>
-                    <a href="#" rel="noreferrer" className="social-btn">
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/camp_pluto"
+                      rel="noreferrer"
+                      className="social-btn"
+                    >
                       <Icon name="instagram" />
                     </a>
                   </li>
@@ -83,7 +88,12 @@ const Header = ({ onLinkClick }) => {
           </nav>
           <ul className="social social-desktop">
             <li>
-              <a href="#" rel="noreferrer" className="social-btn">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/camp_pluto"
+                rel="noreferrer"
+                className="social-btn"
+              >
                 <Icon name="instagram" />
               </a>
             </li>

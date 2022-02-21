@@ -65,18 +65,18 @@ export const HeaderStyle = styled.header`
         &:last-child {
           margin-right: 0px;
         }
-        
+
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           bottom: -4px;
           left: 0;
           height: 2px;
           width: 100%;
           background: transparent;
-          transition: .3s;
+          transition: 0.3s;
         }
-        
+
         &:hover {
           &:after {
             background: ${({ theme }) => theme.colors.black};
