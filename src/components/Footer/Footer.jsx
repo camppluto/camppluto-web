@@ -16,7 +16,11 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="#" rel="noreferrer">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/camp_pluto"
+              rel="noreferrer"
+            >
               <Icon name="instagram" />
             </a>
           </li>

@@ -8,7 +8,7 @@ const letterAppear = keyframes`
   }
 `
 
-const titleAnimation = keyframes  `
+const titleAnimation = keyframes`
   from {
     transform: translateY(-50px);
     opacity: 0;
@@ -20,7 +20,6 @@ const titleAnimation = keyframes  `
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
   }
 `
-
 
 // const template = i => {
 //   return `
@@ -46,8 +45,7 @@ export const TitleStyle = styled.h1`
   ${({ startAnim }) =>
     startAnim &&
     css`
-
-      span{
+      span {
         //width: 100%;
         float: left;
         clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
@@ -55,19 +53,18 @@ export const TitleStyle = styled.h1`
         opacity: 0;
         animation-name: ${titleAnimation};
         animation-timing-function: ease;
-        animation-duration: .8s;
+        animation-duration: 0.8s;
         animation-delay: 0.1s;
         -webkit-animation-fill-mode: forwards;
 
-        &:first-child{
+        &:first-child {
           animation-delay: 0.4s;
-
         }
         &:not(:last-child) {
           padding-right: 16px;
         }
 
-        &:last-child{
+        &:last-child {
           animation-delay: 0.2s;
         }
       }

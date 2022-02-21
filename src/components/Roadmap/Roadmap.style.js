@@ -5,9 +5,8 @@ export const RoadmapStyle = styled.div`
   .title {
     display: flex;
     justify-content: center;
-    
-    span {
 
+    span {
       opacity: 0;
     }
   }

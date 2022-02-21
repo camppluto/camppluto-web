@@ -9,7 +9,6 @@ const fadeIn = keyframes`
   }
 `
 
-
 export const GlobalStyle = createGlobalStyle`
   /*reset*/
   html, body, div, span, object, iframe,
