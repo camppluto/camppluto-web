@@ -2,6 +2,7 @@ import React, { forwardRef, useState } from "react"
 import { TeamStyle } from "./Team.style"
 import { Title } from "../Animations"
 import { Fade } from "react-awesome-reveal"
+import { Icon } from "../UIKit"
 
 const teamList = [
   {
@@ -31,6 +32,7 @@ const teamList = [
   {
     name: "NFT Stack",
     position: "Smart Contract & Website",
+    url: 'https://www.nftstack.info/',
     img: {
       png: "/assets/hero-images/5.png",
       webp: "/assets/hero-images/5.webp",
@@ -63,7 +65,7 @@ const Team = forwardRef(({ onScreen }, ref) => {
             delay={100}
           >
             <ul className="team-list">
-              {teamList.map(({ name, position, img }) => {
+              {teamList.map(({ name, position, img, url }) => {
                 return (
                   <li className="team-card" key={name}>
                     <div className="img-wrapper">
@@ -72,7 +74,10 @@ const Team = forwardRef(({ onScreen }, ref) => {
                         <img src={img.png} alt="camp-pluto" />
                       </picture>
                     </div>
-                    <p className="name">{name}</p>
+
+                    <p className="name">
+                      {url ? <a href={url} target='_blank' rel='noreferrer'>{name} <Icon name='link' size={28}/></a> : name}
+                    </p>
                     <p className="position">{position}</p>
                   </li>
                 )
