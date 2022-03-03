@@ -77,7 +77,7 @@ const Header = ({ onLinkClick }) => {
                     <Button
                       target="_blank"
                       rel="noreferrer"
-                      href="https://discord.gg/VcpBh2af"
+                      href="https://discord.gg/22NkvSgwPV"
                     >
                       DISCORD
                     </Button>
@@ -111,7 +111,7 @@ const Header = ({ onLinkClick }) => {
               <Button
                 target="_blank"
                 rel="noreferrer"
-                href="https://discord.gg/VcpBh2af"
+                href="https://discord.gg/22NkvSgwPV"
               >
                 DISCORD
               </Button>
