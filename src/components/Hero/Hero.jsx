@@ -34,7 +34,7 @@ const Hero = forwardRef(({ onScreen }, ref) => {
               </p>
             </Fade>
 
-            <Button target="_blank" href="https://discord.gg/VcpBh2af">
+            <Button target="_blank" href="https://discord.gg/22NkvSgwPV">
               JOIN OUR DISCORD
             </Button>
           </div>
